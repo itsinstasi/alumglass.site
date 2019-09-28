@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: https://алюмгласс.рф/sitemap.xml
+Sitemap: http://komandorstar.itsinsta.site/sitemap.xml
