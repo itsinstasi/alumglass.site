@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="alumglass.site" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,12 +57,12 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="../main.html" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4cf29707840ead6d84e0f42439520bd8/5E1B4E34/t51.2885-19/s150x150/70786943_2503607933196106_4982849185112915968_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="СТЕКЛО ЗЕРКАЛО МЕБЕЛЬ"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/f28e656f1fa972c19e94d73d6f1b57f0/5E42DB34/t51.2885-19/s150x150/70786943_2503607933196106_4982849185112915968_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="СТЕКЛО ЗЕРКАЛО МЕБЕЛЬ"></div>
 							<div class="header__logo-txt">alumglass.site</div>
 						</a>
 						<div class="header__title">СТЕКЛО ЗЕРКАЛО МЕБЕЛЬ</div>
@@ -68,225 +71,231 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="командорстар">
-								<a href="../tags/./komandorstar.html">
-									<div class="stories__slide-pic"><img src="../img/og/komandorstar.png" alt="командорстар" /></div>
-									<div class="stories__slide-txt">командорстар</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="командорстар">
+										<a href="../tags/./komandorstar.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/komandorstar.png);"></div>
+											<div class="stories__slide-txt">командорстар</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва">
+										<a href="../tags/./moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva.png);"></div>
+											<div class="stories__slide-txt">Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва дом">
+										<a href="../tags/./moskva-dom.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-dom.png);"></div>
+											<div class="stories__slide-txt">Москва дом</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дом Москва">
+										<a href="../tags/./dom-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dom-Moskva.png);"></div>
+											<div class="stories__slide-txt">дом Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уют Москва">
+										<a href="../tags/./uyut-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/uyut-Moskva.png);"></div>
+											<div class="stories__slide-txt">уют Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва уют">
+										<a href="../tags/./moskva-uyut.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-uyut.png);"></div>
+											<div class="stories__slide-txt">Москва уют</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва дача">
+										<a href="../tags/./moskva-dacha.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-dacha.png);"></div>
+											<div class="stories__slide-txt">Москва дача</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф Москва">
+										<a href="../tags/./shkaf-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-Moskva.png);"></div>
+											<div class="stories__slide-txt">шкаф Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы Москва">
+										<a href="../tags/./shkafy-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-Moskva.png);"></div>
+											<div class="stories__slide-txt">шкафы Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="двери Москва">
+										<a href="../tags/./dveri-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dveri-Moskva.png);"></div>
+											<div class="stories__slide-txt">двери Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва двери">
+										<a href="../tags/./moskva-dveri.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-dveri.png);"></div>
+											<div class="stories__slide-txt">Москва двери</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва кухня">
+										<a href="../tags/./moskva-kukhnya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-kukhnya.png);"></div>
+											<div class="stories__slide-txt">Москва кухня</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня Москва">
+										<a href="../tags/./kukhnya-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya-Moskva.png);"></div>
+											<div class="stories__slide-txt">кухня Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ловецзаявок">
+										<a href="../tags/./lovetszayavok.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/lovetszayavok.png);"></div>
+											<div class="stories__slide-txt">ловецзаявок</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель Москва">
+										<a href="../tags/./mebel--moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--Moskva.png);"></div>
+											<div class="stories__slide-txt">мебель Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва мебель">
+										<a href="../tags/./moskva-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-mebel-.png);"></div>
+											<div class="stories__slide-txt">Москва мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн Москва">
+										<a href="../tags/./dizayn-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-Moskva.png);"></div>
+											<div class="stories__slide-txt">дизайн Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва дизайн">
+										<a href="../tags/./moskva-dizayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-dizayn.png);"></div>
+											<div class="stories__slide-txt">Москва дизайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва ремонт">
+										<a href="../tags/./moskva-remont.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-remont.png);"></div>
+											<div class="stories__slide-txt">Москва ремонт</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="потолки Москва">
+										<a href="../tags/./potolki-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/potolki-Moskva.png);"></div>
+											<div class="stories__slide-txt">потолки Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва потолки">
+										<a href="../tags/./moskva-potolki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-potolki.png);"></div>
+											<div class="stories__slide-txt">Москва потолки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва интерьер">
+										<a href="../tags/./moskva-inter-er.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-inter-er.png);"></div>
+											<div class="stories__slide-txt">Москва интерьер</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интерьер Москва">
+										<a href="../tags/./inter-er-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/inter-er-Moskva.png);"></div>
+											<div class="stories__slide-txt">интерьер Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы купе Москва">
+										<a href="../tags/./shkafy-kupe-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-kupe-Moskva.png);"></div>
+											<div class="stories__slide-txt">шкафы купе Москва</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Москва мебель на заказ">
+										<a href="../tags/./moskva-mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Moskva-mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">Москва мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель Москва на заказ">
+										<a href="../tags/./mebel--moskva-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--Moskva-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель Москва на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель эксклюзив Москва">
+										<a href="../tags/./mebel--eksklyuziv-moskva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--eksklyuziv-Moskva.png);"></div>
+											<div class="stories__slide-txt">мебель эксклюзив Москва</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва">
-								<a href="../tags/./moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva.png" alt="Москва" /></div>
-									<div class="stories__slide-txt">Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва дом">
-								<a href="../tags/./moskva-dom.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-dom.png" alt="Москва дом" /></div>
-									<div class="stories__slide-txt">Москва дом</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дом Москва">
-								<a href="../tags/./dom-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/dom-Moskva.png" alt="дом Москва" /></div>
-									<div class="stories__slide-txt">дом Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уют Москва">
-								<a href="../tags/./uyut-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/uyut-Moskva.png" alt="уют Москва" /></div>
-									<div class="stories__slide-txt">уют Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва уют">
-								<a href="../tags/./moskva-uyut.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-uyut.png" alt="Москва уют" /></div>
-									<div class="stories__slide-txt">Москва уют</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва дача">
-								<a href="../tags/./moskva-dacha.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-dacha.png" alt="Москва дача" /></div>
-									<div class="stories__slide-txt">Москва дача</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф Москва">
-								<a href="../tags/./shkaf-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-Moskva.png" alt="шкаф Москва" /></div>
-									<div class="stories__slide-txt">шкаф Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы Москва">
-								<a href="../tags/./shkafy-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-Moskva.png" alt="шкафы Москва" /></div>
-									<div class="stories__slide-txt">шкафы Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="двери Москва">
-								<a href="../tags/./dveri-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/dveri-Moskva.png" alt="двери Москва" /></div>
-									<div class="stories__slide-txt">двери Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва двери">
-								<a href="../tags/./moskva-dveri.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-dveri.png" alt="Москва двери" /></div>
-									<div class="stories__slide-txt">Москва двери</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва кухня">
-								<a href="../tags/./moskva-kukhnya.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-kukhnya.png" alt="Москва кухня" /></div>
-									<div class="stories__slide-txt">Москва кухня</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня Москва">
-								<a href="../tags/./kukhnya-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya-Moskva.png" alt="кухня Москва" /></div>
-									<div class="stories__slide-txt">кухня Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ловецзаявок">
-								<a href="../tags/./lovetszayavok.html">
-									<div class="stories__slide-pic"><img src="../img/og/lovetszayavok.png" alt="ловецзаявок" /></div>
-									<div class="stories__slide-txt">ловецзаявок</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель Москва">
-								<a href="../tags/./mebel--moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--Moskva.png" alt="мебель Москва" /></div>
-									<div class="stories__slide-txt">мебель Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва мебель">
-								<a href="../tags/./moskva-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-mebel-.png" alt="Москва мебель" /></div>
-									<div class="stories__slide-txt">Москва мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн Москва">
-								<a href="../tags/./dizayn-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-Moskva.png" alt="дизайн Москва" /></div>
-									<div class="stories__slide-txt">дизайн Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва дизайн">
-								<a href="../tags/./moskva-dizayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-dizayn.png" alt="Москва дизайн" /></div>
-									<div class="stories__slide-txt">Москва дизайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва ремонт">
-								<a href="../tags/./moskva-remont.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-remont.png" alt="Москва ремонт" /></div>
-									<div class="stories__slide-txt">Москва ремонт</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="потолки Москва">
-								<a href="../tags/./potolki-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/potolki-Moskva.png" alt="потолки Москва" /></div>
-									<div class="stories__slide-txt">потолки Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва потолки">
-								<a href="../tags/./moskva-potolki.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-potolki.png" alt="Москва потолки" /></div>
-									<div class="stories__slide-txt">Москва потолки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва интерьер">
-								<a href="../tags/./moskva-inter-er.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-inter-er.png" alt="Москва интерьер" /></div>
-									<div class="stories__slide-txt">Москва интерьер</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интерьер Москва">
-								<a href="../tags/./inter-er-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/inter-er-Moskva.png" alt="интерьер Москва" /></div>
-									<div class="stories__slide-txt">интерьер Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы купе Москва">
-								<a href="../tags/./shkafy-kupe-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-kupe-Moskva.png" alt="шкафы купе Москва" /></div>
-									<div class="stories__slide-txt">шкафы купе Москва</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="Москва мебель на заказ">
-								<a href="../tags/./moskva-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/Moskva-mebel--na-zakaz.png" alt="Москва мебель на заказ" /></div>
-									<div class="stories__slide-txt">Москва мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель Москва на заказ">
-								<a href="../tags/./mebel--moskva-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--Moskva-na-zakaz.png" alt="мебель Москва на заказ" /></div>
-									<div class="stories__slide-txt">мебель Москва на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель эксклюзив Москва">
-								<a href="../tags/./mebel--eksklyuziv-moskva.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--eksklyuziv-Moskva.png" alt="мебель эксклюзив Москва" /></div>
-									<div class="stories__slide-txt">мебель эксклюзив Москва</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -311,25 +320,50 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/8552dd5291e94d741e434a20a6f077c9/5E24EBEF/t51.2885-15/e35/42672338_264496107744639_7942102551125775492_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/80eaea5e71994c5b27642309efe5beae/5E391DE2/t51.2885-15/e35/44210034_487327821778368_5584239049031341958_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/96a9ceebaceaa18d10bcca1d2e36eb4a/5E3AA047/t51.2885-15/e35/43354089_344392206369372_5838167495313767364_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/fec8ae64370449233dcb0438241b156a/5E1D4094/t51.2885-15/e35/44000212_1828281120615535_7974511770069346835_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/b660c33b763beefed5815244b82eaac6/5E2D79E7/t51.2885-15/e35/44833528_2237429336503222_8898936575222438317_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/4650a400f509121ae56877b4c975b9f2/5E3508C8/t51.2885-15/e35/44325920_325580764936701_8546988884383193047_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/a3252595cacfb4f6bd024da36b9791f6/5E216A5F/t51.2885-15/e35/44195521_589414898155531_8790945336915228786_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/dd8de73838f476b6bb91ac49c62ee8fa/5E1C7AF9/t51.2885-15/e35/43706246_329410941192648_2541619479410226117_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/c9651110570af037b88ad47d0576c53b/5E25F881/t51.2885-15/e35/43913440_1078022062378907_848645610964880356_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/c74eb37b61a4d1fad327be974c7865b3/5E326107/t51.2885-15/e35/44669364_1054256318115982_1497253371056660213_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/8552dd5291e94d741e434a20a6f077c9/5E24EBEF/t51.2885-15/e35/42672338_264496107744639_7942102551125775492_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/8aeaa11792b058b6ae78415673bafb1c/5E60AAE2/t51.2885-15/e35/44210034_487327821778368_5584239049031341958_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/7838d734f47bc526fd0660fc310039f3/5E622D47/t51.2885-15/e35/43354089_344392206369372_5838167495313767364_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/fec8ae64370449233dcb0438241b156a/5E1D4094/t51.2885-15/e35/44000212_1828281120615535_7974511770069346835_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/b660c33b763beefed5815244b82eaac6/5E2D79E7/t51.2885-15/e35/44833528_2237429336503222_8898936575222438317_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/4650a400f509121ae56877b4c975b9f2/5E3508C8/t51.2885-15/e35/44325920_325580764936701_8546988884383193047_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/a3252595cacfb4f6bd024da36b9791f6/5E216A5F/t51.2885-15/e35/44195521_589414898155531_8790945336915228786_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/10c80acdf24135339c41ed430b6118bd/5E4407F9/t51.2885-15/e35/43706246_329410941192648_2541619479410226117_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c9651110570af037b88ad47d0576c53b/5E25F881/t51.2885-15/e35/43913440_1078022062378907_848645610964880356_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c74eb37b61a4d1fad327be974c7865b3/5E326107/t51.2885-15/e35/44669364_1054256318115982_1497253371056660213_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>Зеркало – важный элемент каждого дома, без которого невозможно представить комфортную жизнь. <br/>Обычное классическое зеркало в современном интерьере кажется скучным и не интересным. Многие дизайнеры с успехом решают данную проблему, используя зеркала необычной формы и используя различные способы их декорирования. <br/>Пескоструйные рисунки на зеркале станут оригинальным украшением любого интерьера.<br/><br/>Пескоструйная обработка обладает целым рядом преимуществ: ! художественная ценность. Благодаря современным технологиям можно сделать настоящий шедевр;<br/>! множество вариантов. Существует немало шаблонов гравировки и узоров. Данный метод хорош тем, что всегда можно воспользоваться как готовым рисунком, так и создать эскиз узора, который будет только у вас;<br/>! долгий срок использования. Нанесенное изображение сохраняется на долгие годы, при этом изделие остается в первоначальном виде. ! Цвет и форма рисунка не изменятся даже под воздействием влаги и температуры;<br/>практичность. Такое зеркало не требует особого ухода. Кроме того, современные чистящие средства позволяют удалять загрязнения без особого труда.<br/><br/>ОГРОМНЫЙ АССОРТИМЕНТ РИСУНКОВ ДЛЯ НАНЕСЕНИЯ НА ЗЕРКАЛА ВЫ НАЙДЕТЕ В НАШЕМ КАТАЛОГЕ У ВЫЕЗДНОГО ДИЗАЙНЕРА ИЛИ В САЛОНЕ! ОСТАВЬТЕ ЗАЯВКУ! СПАСИБО!<br/>Подписывайтесь на <a href="https://instagram.com/komandorstar" target="_blank">@komandorstar</a> и на наш хэштег <br/>Для всех подписчиков реальная скидка 20% на весь ряд Мебели.</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BqAyxArgi2c/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -396,7 +430,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5f082ba2501391ebc9b8a285a463bd41/5DA50C53/t51.2885-15/e15/43560536_2190508094570803_5596331502092759858_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="Изящные формы, симметричность линий, благородные цвета — главные признаки классического стиля.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/6f0db6c298e2b81fcb3678409b73633b/5DA900D3/t51.2885-15/e15/43560536_2190508094570803_5596331502092759858_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="Изящные формы, симметричность линий, благородные цвета — главные признаки классического стиля.">
 								</div>
 								<div class="article-more__item-name">Изящные формы, симметричность линий, благородные цвета — главные признаки классического стиля.</div>
 							</a>
@@ -485,11 +519,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
